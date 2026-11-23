@@ -103,9 +103,6 @@ inline bool isHardwareSessionType(const SessionType& session_type_aidl) {
         case SessionType::LE_AUDIO_BROADCAST_HARDWARE_OFFLOAD_ENCODING_DATAPATH:
         case SessionType::HFP_HARDWARE_OFFLOAD_DATAPATH:
         case SessionType::A2DP_HARDWARE_OFFLOAD_DECODING_DATAPATH:
-        case SessionType::LE_AUDIO_PERIPHERAL_OFFLOAD_ENCODING_DATAPATH:
-        case SessionType::LE_AUDIO_PERIPHERAL_OFFLOAD_DECODING_DATAPATH:
-        case SessionType::LE_AUDIO_BROADCAST_HARDWARE_OFFLOAD_DECODING_DATAPATH:
             return true;
         case SessionType::A2DP_SOFTWARE_ENCODING_DATAPATH:
         case SessionType::HEARING_AID_SOFTWARE_ENCODING_DATAPATH:
@@ -115,7 +112,6 @@ inline bool isHardwareSessionType(const SessionType& session_type_aidl) {
         case SessionType::A2DP_SOFTWARE_DECODING_DATAPATH:
         case SessionType::HFP_SOFTWARE_ENCODING_DATAPATH:
         case SessionType::HFP_SOFTWARE_DECODING_DATAPATH:
-        case SessionType::LE_AUDIO_BROADCAST_SOFTWARE_DECODING_DATAPATH:
         case SessionType::UNKNOWN:
             return false;
     }

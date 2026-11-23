@@ -97,15 +97,6 @@ class MTKBluetoothAudioProvider : public BnBluetoothAudioProvider {
             const std::vector<A2dpRemoteCapabilities>& remote_a2dp_capabilities,
             const A2dpConfigurationHint& hint, std::optional<A2dpConfiguration>* _aidl_return);
 
-    ndk::ScopedAStatus getLeAudioAseCodecConfiguredParameters(
-            const std::optional<std::vector<std::optional<
-                    ::aidl::android::hardware::bluetooth::audio::LeAudioAseConfiguration>>>&
-                    in_sinkAseConfiguration,
-            const std::optional<std::vector<std::optional<
-                    ::aidl::android::hardware::bluetooth::audio::LeAudioAseConfiguration>>>&
-                    in_sourceAseConfiguration,
-            std::optional<::aidl::android::hardware::bluetooth::audio::IBluetoothAudioProvider::
-                                  LeAudioAseCodecConfiguredResponse>* _aidl_return);
 
   protected:
     std::shared_ptr<IBluetoothAudioPort> stack_iface_;
